@@ -1,0 +1,52 @@
+.review {
+  background-color: rgba(0, 128, 128, 0.1);
+  width: 270px;
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #32917d;
+  text-align: center;
+}
+
+.review_items {
+  display: none;
+  padding: 10px;
+}
+
+.review_items img {
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 15px;
+}
+
+.review_items h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.review_items p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.review_button {
+  text-align: center;
+  padding: 10px;
+}
+
+.review_button button {
+  color: white;
+  background: green;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.review_button button:hover {
+  background: darkgreen;
+}

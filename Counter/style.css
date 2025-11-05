@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #e0f7fa, #e8f0fe);
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --text-dark: #333;
+  --accent-blue: #3f8efc;
+  --accent-green: #52b788;
+  --accent-red: #e76f51;
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.counter-box {
+  font-size: 3.5rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 20px 60px;
+  display: inline-block;
+  margin-bottom: 25px;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#inc-btn {
+  background: var(--accent-green);
+}
+
+#dec-btn {
+  background: var(--accent-red);
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.clicks {
+  background: #f9fbff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: var(--shadow);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.clicks span {
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .counter-box {
+    font-size: 2.5rem;
+    padding: 15px 40px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
