@@ -104,7 +104,10 @@ body {
   width: 100%;
   height: 250px;
   object-fit: contain; /* ✅ shows full image */
-  border-bottom: 3px solid var(--clr-primary); /* gold accent under image */
+  border-bottom: 3px solid var(--clr-primary); /* gold accent und
+  
+  
+  er image */
   background-color: #fff;
 }
 
